@@ -29,7 +29,6 @@ import pytz
 # ToDo: WebSockets
 # ToDo: AWS hosting
 
-
 news = pd.read_csv('news.csv')
 buyTable = None
 sellTable = None
@@ -71,17 +70,23 @@ def LeaderBoardUpdateTask():
     for p in all_profiles:
         # Calculate total value of shares
         shareValuation = 0
-        shareTableEntries = UserShareTable.objects.filter(profile=p)  # Get all user shares
+        shareTableEntries = UserShareTable.objects.filter(
+            profile=p)  # Get all user shares
         for entry in shareTableEntries:
-            shareValuation += companyStockPrices[entry.company.name] * entry.bidShares
+            shareValuation += companyStockPrices[
+                entry.company.name] * entry.bidShares
 
         p.netWorth = (cashValuationPercent * p.cash) + (
-                shareValuationPercent * shareValuation)  # Calculate net worth of user
+            shareValuationPercent * shareValuation
+        )  # Calculate net worth of user
         p.save()
 
     g = Global.objects.get(pk=1)  # Get Global Values
-    numberOfEntries = min(g.LeaderboardSize, len(all_profiles))  # Get number of entries for leaderboard
-    g.LeaderBoardUpdateTime = datetime.now()  # Set the latest leaderboard update time
+    numberOfEntries = min(
+        g.LeaderboardSize,
+        len(all_profiles))  # Get number of entries for leaderboard
+    g.LeaderBoardUpdateTime = datetime.now(
+    )  # Set the latest leaderboard update time
     g.save()
 
     sorted_profiles = Profile.objects.all().order_by('-netWorth')
@@ -106,18 +111,21 @@ def emptyBuyTableSellTableTask():
         exec("global buyTable; buyTable = BuyTable_" + company.tempName)
         exec("global sellTable; sellTable = SellTable_" + company.tempName)
 
-        sorted_buyTable = buyTable.objects.all().order_by('-bidPrice', 'transactionTime')  # Sort BuyTable Entries
-        sorted_sellTable = sellTable.objects.all().order_by('bidPrice', 'transactionTime')  # Sort SellTable Entries
+        sorted_buyTable = buyTable.objects.all().order_by(
+            '-bidPrice', 'transactionTime')  # Sort BuyTable Entries
+        sorted_sellTable = sellTable.objects.all().order_by(
+            'bidPrice', 'transactionTime')  # Sort SellTable Entries
 
         i = 0  # Counter for sorted_buyTable
         j = 0  # counter for sorted_sellTable
 
         if sorted_buyTable:
-        
+
             # If buying bids exist
             print("in sorted_buytable")
 
-            while i < len(sorted_buyTable) and (j < len(sorted_sellTable) or company.sharesLeft):
+            while i < len(sorted_buyTable) and (j < len(sorted_sellTable)
+                                                or company.sharesLeft):
                 # Matching entries as long as possible
                 if company.sharesLeft:
                     # if company has shares to sell
@@ -125,9 +133,12 @@ def emptyBuyTableSellTableTask():
                         # If sorted_sellTable is empty check for company
                         if sorted_buyTable[i].bidPrice >= company.sharePrice:
                             # Buy Request is greater than comapany current price
-                            flag = userCompanyTrasaction(company, buyTable, sorted_buyTable[
-                                i])  # Perform transaction for company and buying user
-                            i = i + (flag == 0)  # Update counter only if buyTable entry deleted
+                            flag = userCompanyTrasaction(
+                                company, buyTable, sorted_buyTable[i]
+                            )  # Perform transaction for company and buying user
+                            i = i + (
+                                flag == 0
+                            )  # Update counter only if buyTable entry deleted
                             continue
                     # If sorted_sellTable has entry, but company.sharePrice is lesser than sellTable entry then
                     # sell shares of company
@@ -138,14 +149,18 @@ def emptyBuyTableSellTableTask():
                         flag = userCompanyTrasaction(company, buyTable,
                                                      sorted_buyTable[i])
                         # Perform transaction for company and buying user
-                        i = i + (flag == 0)  # Update counter only if buyTable entry deleted
+                        i = i + (
+                            flag == 0
+                        )  # Update counter only if buyTable entry deleted
                         continue
 
-                if (j < len(sorted_sellTable)) and sorted_sellTable and sorted_buyTable[i].bidPrice >= sorted_sellTable[
-                    j].bidPrice:
+                if (j < len(sorted_sellTable)
+                    ) and sorted_sellTable and sorted_buyTable[
+                        i].bidPrice >= sorted_sellTable[j].bidPrice:
                     # User Match with sorted_buyTable[i] and sorted_sellTable[j]
-                    flag = userTransaction(company, buyTable, sellTable, sorted_buyTable[i],
-                                           sorted_sellTable[j])  # Perform Transaction
+                    flag = userTransaction(
+                        company, buyTable, sellTable, sorted_buyTable[i],
+                        sorted_sellTable[j])  # Perform Transaction
                     i = i + (flag == -1 or flag == 0)
                     j = j + (flag == 1 or flag == 0)
 
@@ -163,14 +178,16 @@ def emptyBuyTableSellTableTask():
         #print("j: "+str(j)+" "+str(len(sorted_sellTable)))
         #print(sorted_sellTable)
         while i < len(sorted_buyTable):
-            if (current_time - sorted_buyTable[i].transactionTime).seconds >= 3600:
+            if (current_time -
+                    sorted_buyTable[i].transactionTime).seconds >= 3600:
                 #current_time.hour - sorted_buyTable[i].transactionTime.hour >= 1:
                 userRevoke(sorted_buyTable[i], True)
                 buyTable.objects.get(pk=sorted_buyTable[i].pk).delete()
             i += 1
 
         while j < len(sorted_sellTable):
-            if (current_time - sorted_sellTable[j].transactionTime).seconds >= 3600:
+            if (current_time -
+                    sorted_sellTable[j].transactionTime).seconds >= 3600:
                 #current_time.hour - sorted_sellTable[i].transactionTime.hour >= 1:
                 userRevoke(sorted_sellTable[j], False)
                 sellTable.objects.get(pk=sorted_sellTable[j].pk).delete()
@@ -193,7 +210,7 @@ def spreadTask():
         profiles[u.profile] += value
 
     for p in Profile.objects.all():
-        spreadRatio = profiles[p]/totalTransaction
+        spreadRatio = profiles[p] / totalTransaction
         p.cash += (spreadRatio * g.spread)
         p.save()
 
