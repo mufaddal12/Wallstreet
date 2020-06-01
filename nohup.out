@@ -1,0 +1,408 @@
+/home/krishiv/.local/lib/python3.7/site-packages/django/db/models/base.py:316: RuntimeWarning: Model 'bazaar.buytable_nitromotors' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/home/krishiv/.local/lib/python3.7/site-packages/django/db/models/base.py:316: RuntimeWarning: Model 'bazaar.selltable_nitromotors' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+[2020-06-01 19:55:49,544: INFO/MainProcess] Connected to redis://localhost:6379//
+[2020-06-01 19:55:49,565: INFO/MainProcess] mingle: searching for neighbors
+[2020-06-01 19:55:50,609: INFO/MainProcess] mingle: all alone
+[2020-06-01 19:55:50,618: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-06-01 19:55:50,618: INFO/MainProcess] celery@ubuntu-s-4vcpu-8gb-blr1-01 ready.
+[2020-06-01 19:55:50,627: INFO/MainProcess] pidbox: Connected to redis://localhost:6379//.
+/home/krishiv/.local/lib/python3.7/site-packages/django/db/models/base.py:316: RuntimeWarning: Model 'bazaar.buytable_nitromotors' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/home/krishiv/.local/lib/python3.7/site-packages/django/db/models/base.py:316: RuntimeWarning: Model 'bazaar.selltable_nitromotors' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+[2020-06-01 19:57:47,523: INFO/MainProcess] beat: Starting...
+/home/krishiv/.local/lib/python3.7/site-packages/django/db/models/base.py:316: RuntimeWarning: Model 'bazaar.buytable_nitromotors' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/home/krishiv/.local/lib/python3.7/site-packages/django/db/models/base.py:316: RuntimeWarning: Model 'bazaar.selltable_nitromotors' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+[2020-06-01 19:57:59,831: INFO/MainProcess] Connected to redis://localhost:6379//
+[2020-06-01 19:57:59,842: INFO/MainProcess] mingle: searching for neighbors
+[2020-06-01 19:58:00,866: INFO/MainProcess] mingle: all alone
+[2020-06-01 19:58:00,875: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-06-01 19:58:00,875: INFO/MainProcess] celery@ubuntu-s-4vcpu-8gb-blr1-01 ready.
+[2020-06-01 19:58:00,885: INFO/MainProcess] pidbox: Connected to redis://localhost:6379//.
+[2020-06-01 19:59:41,379: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 19:59:41,397: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 19:59:41,417: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[ccde234f-b9e0-49eb-a6d1-9cce7cc1c35d]  
+[2020-06-01 19:59:41,418: WARNING/MainProcess] Rollback Called
+[2020-06-01 19:59:41,503: INFO/MainProcess] Received task: bazaar.tasks.addNews[7f4356f2-0376-4b4e-b678-b63e533b2114]  
+[2020-06-01 19:59:41,504: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[ccde234f-b9e0-49eb-a6d1-9cce7cc1c35d] succeeded in 0.08602605003397912s: None
+[2020-06-01 19:59:41,506: WARNING/MainProcess] News Called
+[2020-06-01 19:59:41,520: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 19:59:41.518898) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 19:59:41,527: INFO/MainProcess] Task bazaar.tasks.addNews[7f4356f2-0376-4b4e-b678-b63e533b2114] succeeded in 0.020599898067303002s: None
+[2020-06-01 20:09:41,484: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 20:09:41,488: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[2c9d8134-6d93-4139-9072-61a2c16818ac]  
+[2020-06-01 20:09:41,490: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 20:09:41,525: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 20:09:41.524704) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:09:41,579: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[2c9d8134-6d93-4139-9072-61a2c16818ac] succeeded in 0.08977430406957865s: None
+[2020-06-01 20:14:41,455: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 20:14:41,460: INFO/MainProcess] Received task: bazaar.tasks.addNews[69b631f8-7bce-4c1b-a8a0-26a0394a8461]  
+[2020-06-01 20:14:41,461: WARNING/MainProcess] News Called
+[2020-06-01 20:14:41,475: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 20:14:41.475266) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:14:41,484: INFO/MainProcess] Task bazaar.tasks.addNews[69b631f8-7bce-4c1b-a8a0-26a0394a8461] succeeded in 0.023150674998760223s: None
+[2020-06-01 20:14:48,896: INFO/MainProcess] Received task: bazaar.matchUtilities.match[fc4aba47-5bbd-441e-bda8-3a2aebb2641a]  
+[2020-06-01 20:14:48,926: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:14:48.926301) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:14:48,945: INFO/MainProcess] Task bazaar.matchUtilities.match[fc4aba47-5bbd-441e-bda8-3a2aebb2641a] succeeded in 0.048571200924925506s: None
+[2020-06-01 20:15:32,729: INFO/MainProcess] Received task: bazaar.matchUtilities.match[4ddd00f9-7268-4283-bc02-83455a0ea4e1]  
+[2020-06-01 20:15:32,843: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:15:32.843094) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:15:32,864: INFO/MainProcess] Task bazaar.matchUtilities.match[4ddd00f9-7268-4283-bc02-83455a0ea4e1] succeeded in 0.1345343649154529s: None
+[2020-06-01 20:19:15,418: INFO/MainProcess] Received task: bazaar.matchUtilities.match[0413ff86-27be-448f-b242-9088dc9ad89e]  
+[2020-06-01 20:19:15,447: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:19:15.446914) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:19:15,468: INFO/MainProcess] Task bazaar.matchUtilities.match[0413ff86-27be-448f-b242-9088dc9ad89e] succeeded in 0.04932831902988255s: None
+[2020-06-01 20:20:18,894: INFO/MainProcess] Received task: bazaar.matchUtilities.match[2e5c8ed2-299d-42d0-8e0d-74543a627308]  
+[2020-06-01 20:20:18,899: INFO/MainProcess] Task bazaar.matchUtilities.match[2e5c8ed2-299d-42d0-8e0d-74543a627308] succeeded in 0.004589020973071456s: None
+[2020-06-01 20:21:44,593: INFO/MainProcess] Received task: bazaar.matchUtilities.match[f9867399-7a10-45a6-8c4f-9cae0f6b9366]  
+[2020-06-01 20:21:44,624: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:21:44.624034) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:21:44,647: INFO/MainProcess] Task bazaar.matchUtilities.match[f9867399-7a10-45a6-8c4f-9cae0f6b9366] succeeded in 0.05301710602361709s: None
+[2020-06-01 20:21:55,369: INFO/MainProcess] Received task: bazaar.matchUtilities.match[a0d19d4f-9874-46b8-8abb-96769e494d2e]  
+[2020-06-01 20:21:55,411: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:21:55.410540) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:21:55,432: INFO/MainProcess] Task bazaar.matchUtilities.match[a0d19d4f-9874-46b8-8abb-96769e494d2e] succeeded in 0.06204255297780037s: None
+[2020-06-01 20:22:20,307: INFO/MainProcess] Received task: bazaar.matchUtilities.match[38c2c3cf-697d-4cdd-a107-06181e87dc87]  
+[2020-06-01 20:22:20,337: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:22:20.337046) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:22:20,356: INFO/MainProcess] Task bazaar.matchUtilities.match[38c2c3cf-697d-4cdd-a107-06181e87dc87] succeeded in 0.04807880404405296s: None
+[2020-06-01 20:22:41,677: INFO/MainProcess] Received task: bazaar.matchUtilities.match[d071201e-67aa-43c5-aa68-7da3ed3e19c4]  
+[2020-06-01 20:22:41,711: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:22:41.711064) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:22:41,731: INFO/MainProcess] Task bazaar.matchUtilities.match[d071201e-67aa-43c5-aa68-7da3ed3e19c4] succeeded in 0.05237734108231962s: None
+[2020-06-01 20:26:37,294: INFO/MainProcess] Received task: bazaar.matchUtilities.match[0f722e30-feba-4b6a-b2b3-5e9d1f7f3a41]  
+[2020-06-01 20:26:37,299: INFO/MainProcess] Task bazaar.matchUtilities.match[0f722e30-feba-4b6a-b2b3-5e9d1f7f3a41] succeeded in 0.004061009036377072s: None
+[2020-06-01 20:29:41,424: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 20:29:41,427: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[d5b8ce0c-0f43-449e-8837-957d91f7ba7e]  
+[2020-06-01 20:29:41,428: WARNING/MainProcess] Rollback Called
+[2020-06-01 20:29:41,435: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 20:29:41,455: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 20:29:41,484: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 20:29:41,521: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[d5b8ce0c-0f43-449e-8837-957d91f7ba7e] succeeded in 0.09341545694041997s: None
+[2020-06-01 20:29:41,524: INFO/MainProcess] Received task: bazaar.tasks.addNews[540442f6-c8d1-4150-9cf5-0b619313a2ec]  
+[2020-06-01 20:29:41,525: WARNING/MainProcess] News Called
+[2020-06-01 20:29:41,538: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 20:29:41.538118) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:29:41,544: INFO/MainProcess] Task bazaar.tasks.addNews[540442f6-c8d1-4150-9cf5-0b619313a2ec] succeeded in 0.019452802021987736s: None
+[2020-06-01 20:29:41,546: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[72107054-2863-4a31-8caa-1acc2aaf1ccf]  
+[2020-06-01 20:29:41,548: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 20:29:41,587: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 20:29:41.586264) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:29:41,636: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[72107054-2863-4a31-8caa-1acc2aaf1ccf] succeeded in 0.08815381897147745s: None
+[2020-06-01 20:30:42,875: INFO/MainProcess] Received task: bazaar.matchUtilities.match[00b05119-3f8d-4b91-8736-721ca26e5e01]  
+[2020-06-01 20:30:42,908: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:30:42.908008) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:30:42,931: INFO/MainProcess] Task bazaar.matchUtilities.match[00b05119-3f8d-4b91-8736-721ca26e5e01] succeeded in 0.05449087091255933s: None
+[2020-06-01 20:32:14,272: INFO/MainProcess] Received task: bazaar.matchUtilities.match[22ea34df-231a-483a-a404-01c63a8e0cca]  
+[2020-06-01 20:32:14,306: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:32:14.305948) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:32:14,327: INFO/MainProcess] Task bazaar.matchUtilities.match[22ea34df-231a-483a-a404-01c63a8e0cca] succeeded in 0.053727327031083405s: None
+[2020-06-01 20:32:22,934: INFO/MainProcess] Received task: bazaar.matchUtilities.match[0ca168ee-e426-47d2-a69c-5e8977bf5096]  
+[2020-06-01 20:32:22,964: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:32:22.963786) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:32:22,984: INFO/MainProcess] Task bazaar.matchUtilities.match[0ca168ee-e426-47d2-a69c-5e8977bf5096] succeeded in 0.049165659002028406s: None
+[2020-06-01 20:32:31,142: INFO/MainProcess] Received task: bazaar.matchUtilities.match[b83d8d25-b32a-4114-8060-e6bf7d7bd3fe]  
+[2020-06-01 20:32:31,185: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:32:31.184832) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:32:31,192: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:32:31.191904) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:32:31,235: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:32:31.234818) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:32:31,254: INFO/MainProcess] Task bazaar.matchUtilities.match[b83d8d25-b32a-4114-8060-e6bf7d7bd3fe] succeeded in 0.11074630403891206s: None
+[2020-06-01 20:32:52,733: INFO/MainProcess] Received task: bazaar.matchUtilities.match[30ca4b36-e49c-4828-8c3b-07c9affecb21]  
+[2020-06-01 20:32:52,764: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:32:52.763943) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:32:52,783: INFO/MainProcess] Task bazaar.matchUtilities.match[30ca4b36-e49c-4828-8c3b-07c9affecb21] succeeded in 0.048926690011285245s: None
+[2020-06-01 20:33:10,149: INFO/MainProcess] Received task: bazaar.matchUtilities.match[869a56f1-b5af-4d54-9683-2aed204d9804]  
+[2020-06-01 20:33:10,182: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:33:10.181956) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:33:10,201: INFO/MainProcess] Task bazaar.matchUtilities.match[869a56f1-b5af-4d54-9683-2aed204d9804] succeeded in 0.050029581994749606s: None
+[2020-06-01 20:33:23,664: INFO/MainProcess] Received task: bazaar.matchUtilities.match[e8375e97-c770-4612-9713-3c3670356438]  
+[2020-06-01 20:33:23,691: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:33:23.690861) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:33:23,710: INFO/MainProcess] Task bazaar.matchUtilities.match[e8375e97-c770-4612-9713-3c3670356438] succeeded in 0.04472363006789237s: None
+[2020-06-01 20:33:35,330: INFO/MainProcess] Received task: bazaar.matchUtilities.match[9ebd947a-d896-4b28-b250-093151541866]  
+[2020-06-01 20:33:35,371: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:33:35.371238) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:33:35,393: INFO/MainProcess] Task bazaar.matchUtilities.match[9ebd947a-d896-4b28-b250-093151541866] succeeded in 0.061299705994315445s: None
+[2020-06-01 20:34:10,599: INFO/MainProcess] Received task: bazaar.matchUtilities.match[e77918e3-d5fc-4afd-9d49-42a479c8b0f8]  
+[2020-06-01 20:34:10,606: INFO/MainProcess] Task bazaar.matchUtilities.match[e77918e3-d5fc-4afd-9d49-42a479c8b0f8] succeeded in 0.0060687210643664s: None
+[2020-06-01 20:41:39,994: INFO/MainProcess] Received task: bazaar.matchUtilities.match[3fe9c544-39f6-4d50-9f65-a2b58ff75382]  
+[2020-06-01 20:41:40,027: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:41:40.026731) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:41:40,048: INFO/MainProcess] Task bazaar.matchUtilities.match[3fe9c544-39f6-4d50-9f65-a2b58ff75382] succeeded in 0.05377341993153095s: None
+[2020-06-01 20:41:56,762: INFO/MainProcess] Received task: bazaar.matchUtilities.match[42130297-c052-46bd-ba15-34ee30fa370f]  
+[2020-06-01 20:41:56,768: INFO/MainProcess] Task bazaar.matchUtilities.match[42130297-c052-46bd-ba15-34ee30fa370f] succeeded in 0.004645818960852921s: None
+[2020-06-01 20:43:18,802: INFO/MainProcess] Received task: bazaar.matchUtilities.match[c6ac437f-fee5-4fe0-b853-a7caa955fb86]  
+[2020-06-01 20:43:18,833: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:43:18.833115) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:43:18,851: INFO/MainProcess] Task bazaar.matchUtilities.match[c6ac437f-fee5-4fe0-b853-a7caa955fb86] succeeded in 0.048024720046669245s: None
+[2020-06-01 20:43:42,620: INFO/MainProcess] Received task: bazaar.matchUtilities.match[ce568fa1-d247-43b4-b186-f5244e97949c]  
+[2020-06-01 20:43:42,628: INFO/MainProcess] Task bazaar.matchUtilities.match[ce568fa1-d247-43b4-b186-f5244e97949c] succeeded in 0.006984277977608144s: None
+[2020-06-01 20:43:57,994: INFO/MainProcess] Received task: bazaar.matchUtilities.match[bc90f1dc-8146-4928-8abf-f6640d6ef5cf]  
+[2020-06-01 20:43:58,033: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:43:58.032903) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:43:58,040: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:43:58.039808) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:43:58,082: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:43:58.082165) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:43:58,101: INFO/MainProcess] Task bazaar.matchUtilities.match[bc90f1dc-8146-4928-8abf-f6640d6ef5cf] succeeded in 0.10587004700209945s: None
+[2020-06-01 20:44:41,478: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 20:44:41,482: INFO/MainProcess] Received task: bazaar.tasks.addNews[28b849c6-69ac-4899-b884-2fa07a53ca44]  
+[2020-06-01 20:44:41,484: WARNING/MainProcess] News Called
+[2020-06-01 20:44:41,507: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 20:44:41.507102) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:44:41,515: INFO/MainProcess] Task bazaar.tasks.addNews[28b849c6-69ac-4899-b884-2fa07a53ca44] succeeded in 0.031716895988211036s: None
+[2020-06-01 20:46:27,082: INFO/MainProcess] Received task: bazaar.matchUtilities.match[43294571-f208-4beb-844f-29b6be25ce53]  
+[2020-06-01 20:46:27,090: INFO/MainProcess] Task bazaar.matchUtilities.match[43294571-f208-4beb-844f-29b6be25ce53] succeeded in 0.007399411988444626s: None
+[2020-06-01 20:46:40,305: INFO/MainProcess] Received task: bazaar.matchUtilities.match[6cf94552-dbed-49ae-836f-8b794f944d1b]  
+[2020-06-01 20:46:40,318: INFO/MainProcess] Task bazaar.matchUtilities.match[6cf94552-dbed-49ae-836f-8b794f944d1b] succeeded in 0.01150940009392798s: None
+[2020-06-01 20:49:41,577: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 20:49:41,580: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[393611a7-8148-4a69-9377-ff81c9fac895]  
+[2020-06-01 20:49:41,581: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 20:49:41,618: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 20:49:41.617466) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:49:41,676: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[393611a7-8148-4a69-9377-ff81c9fac895] succeeded in 0.09573335701134056s: None
+[2020-06-01 20:58:53,070: INFO/MainProcess] Received task: bazaar.matchUtilities.match[28a8172a-8db2-455b-88fb-926c3875b82e]  
+[2020-06-01 20:58:53,107: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:58:53.107308) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:58:53,126: INFO/MainProcess] Task bazaar.matchUtilities.match[28a8172a-8db2-455b-88fb-926c3875b82e] succeeded in 0.05497369694057852s: None
+[2020-06-01 20:59:26,158: INFO/MainProcess] Received task: bazaar.matchUtilities.match[afc41022-5827-4308-9db1-c06dead838db]  
+[2020-06-01 20:59:26,186: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:59:26.186346) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:59:26,205: INFO/MainProcess] Task bazaar.matchUtilities.match[afc41022-5827-4308-9db1-c06dead838db] succeeded in 0.04579631402157247s: None
+[2020-06-01 20:59:41,518: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 20:59:41,520: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 20:59:41,522: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[12f205f1-6f01-4c92-89b2-d2f9b4199743]  
+[2020-06-01 20:59:41,523: WARNING/MainProcess] Rollback Called
+[2020-06-01 20:59:41,533: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 20:59:41,612: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[12f205f1-6f01-4c92-89b2-d2f9b4199743] succeeded in 0.08978536899667233s: None
+[2020-06-01 20:59:41,614: INFO/MainProcess] Received task: bazaar.tasks.addNews[a1695675-f6ff-4423-9000-7d785b77dca9]  
+[2020-06-01 20:59:41,615: WARNING/MainProcess] News Called
+[2020-06-01 20:59:41,627: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 20:59:41.626961) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:59:41,633: INFO/MainProcess] Task bazaar.tasks.addNews[a1695675-f6ff-4423-9000-7d785b77dca9] succeeded in 0.01788097305689007s: None
+[2020-06-01 20:59:45,919: INFO/MainProcess] Received task: bazaar.matchUtilities.match[c4160f1e-3ef5-4155-bdba-3643e6fa4d4d]  
+[2020-06-01 20:59:46,070: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 20:59:46.070504) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 20:59:46,089: INFO/MainProcess] Task bazaar.matchUtilities.match[c4160f1e-3ef5-4155-bdba-3643e6fa4d4d] succeeded in 0.16899959405418485s: None
+[2020-06-01 21:00:53,754: INFO/MainProcess] Received task: bazaar.matchUtilities.match[4e3b1b21-a203-47b8-9794-671c3c5dce69]  
+[2020-06-01 21:00:53,762: INFO/MainProcess] Task bazaar.matchUtilities.match[4e3b1b21-a203-47b8-9794-671c3c5dce69] succeeded in 0.00645530701149255s: None
+[2020-06-01 21:03:55,251: INFO/MainProcess] Received task: bazaar.matchUtilities.match[91772215-cc6b-4939-92d0-68ab73701915]  
+[2020-06-01 21:03:55,291: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:03:55.291148) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:03:55,304: INFO/MainProcess] Task bazaar.matchUtilities.match[91772215-cc6b-4939-92d0-68ab73701915] succeeded in 0.052040628041140735s: None
+[2020-06-01 21:04:04,940: INFO/MainProcess] Received task: bazaar.matchUtilities.match[45a920cc-fb8a-4395-a107-c609b9748cc4]  
+[2020-06-01 21:04:04,948: INFO/MainProcess] Task bazaar.matchUtilities.match[45a920cc-fb8a-4395-a107-c609b9748cc4] succeeded in 0.00672775402199477s: None
+[2020-06-01 21:05:21,008: INFO/MainProcess] Received task: bazaar.matchUtilities.match[3a4bf9ff-0cda-40a4-a8c6-eac88d2dd863]  
+[2020-06-01 21:05:21,043: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:05:21.042871) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:05:21,049: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:05:21.049309) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:05:21,075: INFO/MainProcess] Task bazaar.matchUtilities.match[3a4bf9ff-0cda-40a4-a8c6-eac88d2dd863] succeeded in 0.06610158598050475s: None
+[2020-06-01 21:06:39,186: INFO/MainProcess] Received task: bazaar.matchUtilities.match[0d2bad8e-faf4-41b8-a7be-263bc4b42516]  
+[2020-06-01 21:06:39,191: INFO/MainProcess] Task bazaar.matchUtilities.match[0d2bad8e-faf4-41b8-a7be-263bc4b42516] succeeded in 0.004824450938031077s: None
+[2020-06-01 21:07:55,673: INFO/MainProcess] Received task: bazaar.matchUtilities.match[8aab2f90-b8d3-414b-ae02-568db4e12de4]  
+[2020-06-01 21:07:55,706: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:07:55.706250) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:07:55,726: INFO/MainProcess] Task bazaar.matchUtilities.match[8aab2f90-b8d3-414b-ae02-568db4e12de4] succeeded in 0.051700765965506434s: None
+[2020-06-01 21:08:28,766: INFO/MainProcess] Received task: bazaar.matchUtilities.match[ae7ad092-f67c-49d5-813a-a04440284051]  
+[2020-06-01 21:08:28,774: INFO/MainProcess] Task bazaar.matchUtilities.match[ae7ad092-f67c-49d5-813a-a04440284051] succeeded in 0.0069760800106450915s: None
+[2020-06-01 21:08:46,095: INFO/MainProcess] Received task: bazaar.matchUtilities.match[37c007f9-30d8-40f4-ada4-af12a1cc932c]  
+[2020-06-01 21:08:46,126: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:08:46.126152) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:08:46,147: INFO/MainProcess] Task bazaar.matchUtilities.match[37c007f9-30d8-40f4-ada4-af12a1cc932c] succeeded in 0.050651555065996945s: None
+[2020-06-01 21:09:04,129: INFO/MainProcess] Received task: bazaar.matchUtilities.match[b395afb4-53bc-41d3-a820-0283546d3f52]  
+[2020-06-01 21:09:04,159: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:09:04.159056) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:09:04,179: INFO/MainProcess] Task bazaar.matchUtilities.match[b395afb4-53bc-41d3-a820-0283546d3f52] succeeded in 0.04814675892703235s: None
+[2020-06-01 21:09:32,127: INFO/MainProcess] Received task: bazaar.matchUtilities.match[5a2e1dca-8ea1-40b6-ba22-7799056f299b]  
+[2020-06-01 21:09:32,158: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:09:32.158027) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:09:32,176: INFO/MainProcess] Task bazaar.matchUtilities.match[5a2e1dca-8ea1-40b6-ba22-7799056f299b] succeeded in 0.04778406594414264s: None
+[2020-06-01 21:09:41,585: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 21:09:41,589: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[33a0afb4-d89d-4809-8339-a51287b97687]  
+[2020-06-01 21:09:41,590: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 21:09:41,655: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 21:09:41.655201) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:09:41,743: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[33a0afb4-d89d-4809-8339-a51287b97687] succeeded in 0.15340129390824586s: None
+[2020-06-01 21:09:50,022: INFO/MainProcess] Received task: bazaar.matchUtilities.match[2f5f2b2d-3d3a-4d79-bdef-2d0dde93d456]  
+[2020-06-01 21:09:50,052: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:09:50.052359) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:09:50,072: INFO/MainProcess] Task bazaar.matchUtilities.match[2f5f2b2d-3d3a-4d79-bdef-2d0dde93d456] succeeded in 0.04876737005542964s: None
+[2020-06-01 21:10:12,105: INFO/MainProcess] Received task: bazaar.matchUtilities.match[d7ed19d9-bd90-4aeb-9338-2244e6a5d881]  
+[2020-06-01 21:10:12,140: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:10:12.139807) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:10:12,164: INFO/MainProcess] Task bazaar.matchUtilities.match[d7ed19d9-bd90-4aeb-9338-2244e6a5d881] succeeded in 0.057839247048832476s: None
+[2020-06-01 21:10:36,330: INFO/MainProcess] Received task: bazaar.matchUtilities.match[be099a90-dbe3-4349-b508-f420695eeff2]  
+[2020-06-01 21:10:36,342: INFO/MainProcess] Task bazaar.matchUtilities.match[be099a90-dbe3-4349-b508-f420695eeff2] succeeded in 0.011332709924317896s: None
+[2020-06-01 21:10:52,058: INFO/MainProcess] Received task: bazaar.matchUtilities.match[6b26b4e8-c491-4f8d-bd10-54ca60243f4b]  
+[2020-06-01 21:10:52,066: INFO/MainProcess] Task bazaar.matchUtilities.match[6b26b4e8-c491-4f8d-bd10-54ca60243f4b] succeeded in 0.007033044006675482s: None
+[2020-06-01 21:11:12,013: INFO/MainProcess] Received task: bazaar.matchUtilities.match[91c11e40-8bcd-4e29-9fd4-e26acccc239a]  
+[2020-06-01 21:11:12,021: INFO/MainProcess] Task bazaar.matchUtilities.match[91c11e40-8bcd-4e29-9fd4-e26acccc239a] succeeded in 0.006830511963926256s: None
+[2020-06-01 21:13:08,831: INFO/MainProcess] Received task: bazaar.matchUtilities.match[54ccdaab-0fd1-4f0d-bb1f-265517877e5d]  
+[2020-06-01 21:13:08,868: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:13:08.867430) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:13:08,886: INFO/MainProcess] Task bazaar.matchUtilities.match[54ccdaab-0fd1-4f0d-bb1f-265517877e5d] succeeded in 0.053809953038580716s: None
+[2020-06-01 21:13:26,819: INFO/MainProcess] Received task: bazaar.matchUtilities.match[aea48ddc-b443-48fc-82f3-fd4f4ce1bd21]  
+[2020-06-01 21:13:26,827: INFO/MainProcess] Task bazaar.matchUtilities.match[aea48ddc-b443-48fc-82f3-fd4f4ce1bd21] succeeded in 0.007278498960658908s: None
+[2020-06-01 21:14:13,497: INFO/MainProcess] Received task: bazaar.matchUtilities.match[b333146e-8b7c-47b6-9d0f-4ad605b02bb8]  
+[2020-06-01 21:14:13,529: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 21:14:13.529148) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:14:13,549: INFO/MainProcess] Task bazaar.matchUtilities.match[b333146e-8b7c-47b6-9d0f-4ad605b02bb8] succeeded in 0.05053155997302383s: None
+[2020-06-01 21:14:41,540: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 21:14:41,544: INFO/MainProcess] Received task: bazaar.tasks.addNews[4aae50f6-70ac-4729-8257-0d494f99f2cd]  
+[2020-06-01 21:14:41,545: WARNING/MainProcess] News Called
+[2020-06-01 21:14:41,560: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 21:14:41.560471) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:14:41,567: INFO/MainProcess] Task bazaar.tasks.addNews[4aae50f6-70ac-4729-8257-0d494f99f2cd] succeeded in 0.021501988056115806s: None
+[2020-06-01 21:14:43,355: INFO/MainProcess] Received task: bazaar.matchUtilities.match[0ade69db-18e7-4632-a757-3e62a8b4203a]  
+[2020-06-01 21:14:43,361: INFO/MainProcess] Task bazaar.matchUtilities.match[0ade69db-18e7-4632-a757-3e62a8b4203a] succeeded in 0.00553404598031193s: None
+[2020-06-01 21:15:01,528: INFO/MainProcess] Received task: bazaar.matchUtilities.match[5d17d4a6-0e8e-44ea-8aad-15481b5ed72e]  
+[2020-06-01 21:15:01,535: INFO/MainProcess] Task bazaar.matchUtilities.match[5d17d4a6-0e8e-44ea-8aad-15481b5ed72e] succeeded in 0.0055792880011722445s: None
+[2020-06-01 21:15:17,901: INFO/MainProcess] Received task: bazaar.matchUtilities.match[1297d77b-dab5-43bc-b8fe-03478a2f219b]  
+[2020-06-01 21:15:17,909: INFO/MainProcess] Task bazaar.matchUtilities.match[1297d77b-dab5-43bc-b8fe-03478a2f219b] succeeded in 0.0066872830502688885s: None
+[2020-06-01 21:15:30,317: INFO/MainProcess] Received task: bazaar.matchUtilities.match[9b7597bc-e47a-4146-a68e-42f5e078cfac]  
+[2020-06-01 21:15:30,324: INFO/MainProcess] Task bazaar.matchUtilities.match[9b7597bc-e47a-4146-a68e-42f5e078cfac] succeeded in 0.0054465209832414985s: None
+[2020-06-01 21:15:50,812: INFO/MainProcess] Received task: bazaar.matchUtilities.match[4e8685eb-5023-4444-b4dd-969ada87058b]  
+[2020-06-01 21:15:50,819: INFO/MainProcess] Task bazaar.matchUtilities.match[4e8685eb-5023-4444-b4dd-969ada87058b] succeeded in 0.005784254055470228s: None
+[2020-06-01 21:16:12,856: INFO/MainProcess] Received task: bazaar.matchUtilities.match[53f6bed2-70e3-43d9-bc39-fbd01c007843]  
+[2020-06-01 21:16:12,863: INFO/MainProcess] Task bazaar.matchUtilities.match[53f6bed2-70e3-43d9-bc39-fbd01c007843] succeeded in 0.0061440239660441875s: None
+[2020-06-01 21:23:40,916: INFO/MainProcess] Received task: bazaar.matchUtilities.match[856a0e03-58ee-4eb3-bb0e-19d1e47b23b4]  
+[2020-06-01 21:23:40,930: INFO/MainProcess] Task bazaar.matchUtilities.match[856a0e03-58ee-4eb3-bb0e-19d1e47b23b4] succeeded in 0.012840643059462309s: None
+[2020-06-01 21:29:41,612: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 21:29:41,615: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 21:29:41,616: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[ec7194f7-4afc-4510-92b6-07e852f77667]  
+[2020-06-01 21:29:41,617: WARNING/MainProcess] Rollback Called
+[2020-06-01 21:29:41,621: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,623: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 21:29:41,628: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,658: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,664: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,667: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,712: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,713: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:29:41,716: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[ec7194f7-4afc-4510-92b6-07e852f77667] succeeded in 0.09900098096113652s: None
+[2020-06-01 21:29:41,717: INFO/MainProcess] Received task: bazaar.tasks.addNews[6861aa15-d63e-4c37-bc55-d2d6d475ce50]  
+[2020-06-01 21:29:41,718: WARNING/MainProcess] News Called
+[2020-06-01 21:29:41,729: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 21:29:41.729354) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:29:41,736: INFO/MainProcess] Task bazaar.tasks.addNews[6861aa15-d63e-4c37-bc55-d2d6d475ce50] succeeded in 0.017610050039365888s: None
+[2020-06-01 21:29:41,738: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[029d0019-724d-45de-8e1c-2920a5a3df68]  
+[2020-06-01 21:29:41,739: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 21:29:41,796: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 21:29:41.795479) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:29:41,885: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[029d0019-724d-45de-8e1c-2920a5a3df68] succeeded in 0.14671142294537276s: None
+[2020-06-01 21:44:41,708: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 21:44:41,712: INFO/MainProcess] Received task: bazaar.tasks.addNews[eb7d04e4-6d5a-410d-b3a6-45b6dee5c46c]  
+[2020-06-01 21:44:41,713: WARNING/MainProcess] News Called
+[2020-06-01 21:44:41,728: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 21:44:41.728333) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:44:41,735: INFO/MainProcess] Task bazaar.tasks.addNews[eb7d04e4-6d5a-410d-b3a6-45b6dee5c46c] succeeded in 0.02255860494915396s: None
+[2020-06-01 21:49:41,653: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 21:49:41,657: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[23a251c0-faac-48cc-ab73-6db0dbd65428]  
+[2020-06-01 21:49:41,659: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 21:49:41,731: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 21:49:41.730995) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:49:41,832: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[23a251c0-faac-48cc-ab73-6db0dbd65428] succeeded in 0.17331966303754598s: None
+[2020-06-01 21:59:41,705: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 21:59:41,708: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 21:59:41,712: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[b4f64947-7e0f-43ef-bdb8-28898ff3a2cb]  
+[2020-06-01 21:59:41,713: WARNING/MainProcess] Rollback Called
+[2020-06-01 21:59:41,720: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:59:41,757: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:59:41,766: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:59:41,770: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:59:41,898: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:59:41,901: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 21:59:41,904: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[b4f64947-7e0f-43ef-bdb8-28898ff3a2cb] succeeded in 0.19050149410031736s: None
+[2020-06-01 21:59:41,907: INFO/MainProcess] Received task: bazaar.tasks.addNews[a6c20cad-9471-4d71-bcea-96f972cd6d1b]  
+[2020-06-01 21:59:41,909: WARNING/MainProcess] News Called
+[2020-06-01 21:59:41,935: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 21:59:41.935034) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 21:59:41,944: INFO/MainProcess] Task bazaar.tasks.addNews[a6c20cad-9471-4d71-bcea-96f972cd6d1b] succeeded in 0.035237016971223056s: None
+[2020-06-01 22:09:41,712: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 22:09:41,715: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[fd478a68-eb17-4c43-a1da-a729a06fc695]  
+[2020-06-01 22:09:41,717: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 22:09:41,800: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 22:09:41.799380) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:09:41,915: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[fd478a68-eb17-4c43-a1da-a729a06fc695] succeeded in 0.1983908519614488s: None
+[2020-06-01 22:14:41,801: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 22:14:41,805: INFO/MainProcess] Received task: bazaar.tasks.addNews[98e92438-3d6c-4d8a-b8cb-10cd91573a33]  
+[2020-06-01 22:14:41,806: WARNING/MainProcess] News Called
+[2020-06-01 22:14:41,825: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 22:14:41.824809) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:14:41,831: INFO/MainProcess] Task bazaar.tasks.addNews[98e92438-3d6c-4d8a-b8cb-10cd91573a33] succeeded in 0.025546242017298937s: None
+[2020-06-01 22:17:45,338: INFO/MainProcess] Received task: bazaar.matchUtilities.match[b2018004-eea7-49ac-b2be-bc6bd9416f3c]  
+[2020-06-01 22:17:45,381: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 22:17:45.380963) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:17:45,388: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 22:17:45.387608) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:17:45,450: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 22:17:45.450244) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:17:45,460: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField UserHistory.transactionTime received a naive datetime (2020-06-01 22:17:45.459446) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:17:45,490: INFO/MainProcess] Task bazaar.matchUtilities.match[b2018004-eea7-49ac-b2be-bc6bd9416f3c] succeeded in 0.15087240794673562s: None
+[2020-06-01 22:29:41,798: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 22:29:41,801: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 22:29:41,802: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[4facdd02-56e7-4420-b289-1178b52032a5]  
+[2020-06-01 22:29:41,803: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 22:29:41,804: WARNING/MainProcess] Rollback Called
+[2020-06-01 22:29:41,810: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 22:29:41,895: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 22:29:41,938: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 22:29:41,976: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 22:29:42,106: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 22:29:42,124: WARNING/MainProcess] in sorted_buytable
+[2020-06-01 22:29:42,140: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[4facdd02-56e7-4420-b289-1178b52032a5] succeeded in 0.336503281025216s: None
+[2020-06-01 22:29:42,143: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[0a996fc8-f8be-44ea-9bcc-905dd92867ce]  
+[2020-06-01 22:29:42,147: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 22:29:42,232: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 22:29:42.231732) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:29:42,362: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[0a996fc8-f8be-44ea-9bcc-905dd92867ce] succeeded in 0.21557731507346034s: None
+[2020-06-01 22:29:42,365: INFO/MainProcess] Received task: bazaar.tasks.addNews[9b13e09a-9e8e-4bdb-99b3-2b88edbd2111]  
+[2020-06-01 22:29:42,367: WARNING/MainProcess] News Called
+[2020-06-01 22:29:42,378: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 22:29:42.377513) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:29:42,385: INFO/MainProcess] Task bazaar.tasks.addNews[9b13e09a-9e8e-4bdb-99b3-2b88edbd2111] succeeded in 0.01847245905082673s: None
+[2020-06-01 22:44:41,895: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 22:44:41,899: INFO/MainProcess] Received task: bazaar.tasks.addNews[45ae8c7a-c872-462e-b37a-dc86f63bb812]  
+[2020-06-01 22:44:41,900: WARNING/MainProcess] News Called
+[2020-06-01 22:44:41,914: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 22:44:41.914308) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:44:41,924: INFO/MainProcess] Task bazaar.tasks.addNews[45ae8c7a-c872-462e-b37a-dc86f63bb812] succeeded in 0.024023868958465755s: None
+[2020-06-01 22:49:41,804: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 22:49:41,808: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[44978418-14f2-4f5a-bdf2-815c89bbe140]  
+[2020-06-01 22:49:41,809: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 22:49:41,907: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 22:49:41.906217) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:49:42,039: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[44978418-14f2-4f5a-bdf2-815c89bbe140] succeeded in 0.23013968393206596s: None
+[2020-06-01 22:59:41,891: INFO/MainProcess] Scheduler: Sending due task task-emptyTables (bazaar.tasks.emptyBuyTableSellTableTask)
+[2020-06-01 22:59:41,895: INFO/MainProcess] Received task: bazaar.tasks.emptyBuyTableSellTableTask[ab106d6c-7581-4014-b612-ac31375f25d4]  
+[2020-06-01 22:59:41,895: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 22:59:41,896: WARNING/MainProcess] Rollback Called
+[2020-06-01 22:59:41,988: INFO/MainProcess] Task bazaar.tasks.emptyBuyTableSellTableTask[ab106d6c-7581-4014-b612-ac31375f25d4] succeeded in 0.09173292305786163s: None
+[2020-06-01 22:59:41,990: INFO/MainProcess] Received task: bazaar.tasks.addNews[6d6c5e1a-6fed-43c7-b058-4cf1f0434207]  
+[2020-06-01 22:59:41,992: WARNING/MainProcess] News Called
+[2020-06-01 22:59:42,004: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 22:59:42.004150) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 22:59:42,012: INFO/MainProcess] Task bazaar.tasks.addNews[6d6c5e1a-6fed-43c7-b058-4cf1f0434207] succeeded in 0.021116479067131877s: None
+[2020-06-01 23:09:41,897: INFO/MainProcess] Scheduler: Sending due task task-leaderboard (bazaar.tasks.LeaderBoardUpdateTask)
+[2020-06-01 23:09:41,900: INFO/MainProcess] Received task: bazaar.tasks.LeaderBoardUpdateTask[4898f2a4-7c59-4ace-a7c9-f842aeb887e9]  
+[2020-06-01 23:09:41,901: WARNING/MainProcess] Leaderboard Task Called
+[2020-06-01 23:09:41,983: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Global.LeaderBoardUpdateTime received a naive datetime (2020-06-01 23:09:41.983224) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 23:09:42,104: INFO/MainProcess] Task bazaar.tasks.LeaderBoardUpdateTask[4898f2a4-7c59-4ace-a7c9-f842aeb887e9] succeeded in 0.2033251110697165s: None
+[2020-06-01 23:14:41,939: INFO/MainProcess] Scheduler: Sending due task task-news (bazaar.tasks.addNews)
+[2020-06-01 23:14:41,943: INFO/MainProcess] Received task: bazaar.tasks.addNews[4adbb4c3-00af-4111-89a4-84cc156a07c3]  
+[2020-06-01 23:14:41,944: WARNING/MainProcess] News Called
+[2020-06-01 23:14:41,959: WARNING/MainProcess] /home/krishiv/.local/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField News.time received a naive datetime (2020-06-01 23:14:41.959104) while time zone support is active.
+  RuntimeWarning)
+[2020-06-01 23:14:41,967: INFO/MainProcess] Task bazaar.tasks.addNews[4adbb4c3-00af-4111-89a4-84cc156a07c3] succeeded in 0.022874864982441068s: None
