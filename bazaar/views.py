@@ -9,7 +9,7 @@ import json
 
 from .models import *
 from .matchUtilities import *
-
+from .utility import *
 # Create your views here.
 buyTable = None
 sellTable = None
@@ -23,6 +23,7 @@ class Register(View):
 
     def post(self, request):
         try:
+            # add_company("")aFA7JM
             g = Global.objects.get(pk=1)
             print(g.registrationKey)
             if request.POST["password"] == g.registrationKey:

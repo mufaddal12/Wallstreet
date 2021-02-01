@@ -75,15 +75,15 @@ CELERY_IMPORTS = ("bazaar.tasks", )
 CELERY_BEAT_SCHEDULE = {
     'task-news': {
         'task': 'bazaar.tasks.addNews',
-        'schedule': 900,
+        'schedule': 100,
     },
     'task-leaderboard': {
         'task': 'bazaar.tasks.LeaderBoardUpdateTask',
-        'schedule': 1200,
+        'schedule': 200,
     },
     'task-emptyTables': {
         'task': 'bazaar.tasks.emptyBuyTableSellTableTask',
-        'schedule': 1800,
+        'schedule': 200,
     },
     'task-distributeSpread': {
         'task': 'bazaar.tasks.spreadTask',

@@ -44,6 +44,7 @@ def addNews():
         if g.NewsCounter < news.shape[0]:
             new_news = news.iloc[g.NewsCounter, :]
             title = new_news.title
+            g.LiveText = new_news.title
             description = new_news.description
             g.NewsCounter += 1
             g.save()
