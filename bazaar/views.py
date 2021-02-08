@@ -23,7 +23,7 @@ class Register(View):
 
     def post(self, request):
         try:
-            # add_company("")aFA7JM
+            # add_company("")
             g = Global.objects.get(pk=1)
             print(g.registrationKey)
             if request.POST["password"] == g.registrationKey:

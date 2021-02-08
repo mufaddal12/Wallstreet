@@ -1,0 +1,17 @@
+1. Remove db.sqlite files from main directory
+2. Remove pycache and migration directory from bazaar/
+3. Run python manage.py makemigrations bazaar
+4. Run python manage.py migrate
+5. Uncomment line 26
+6. Go to localhost/register and enter random strings in 2 fields
+7. Comment line 26
+8. Run python manage.py makemigrations bazaar
+9. Run python manage.py migrate
+10. Create superuser (admin user)
+11. Create global object from admin panel
+12. Set debug = false
+13. Start redis server with command sudo redis-server
+14. New terminal : celery -A Wallstreet worker --pool=eventlet -l info
+15. New terminal : celery -A Wallstreet beat -l info
+16. python manage.py collectstatic
+17. python manage.py runserver 
