@@ -2,9 +2,9 @@
 2. Remove pycache and migration directory from bazaar/
 3. Run python manage.py makemigrations bazaar
 4. Run python manage.py migrate
-5. Uncomment line 26
+5. Uncomment line 27
 6. Go to localhost/register and enter random strings in 2 fields
-7. Comment line 26
+7. Comment line 27
 8. Run python manage.py makemigrations bazaar
 9. Run python manage.py migrate
 10. Create superuser (admin user)

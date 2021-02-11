@@ -6,6 +6,7 @@ from django.db import IntegrityError
 from datetime import datetime
 from django.http import JsonResponse
 import json
+import requests
 
 from .models import *
 from .matchUtilities import *
@@ -43,6 +44,46 @@ class Register(View):
                           {"error": "Invalid Registration"})
 
 
+def requestUser(username, password):
+    print()
+    print("Requesting ", username)
+    print()
+    api_endpoint = "https://backend.credenz.in/eventlogin"
+    data = {
+        "username": username,
+        "password": password,
+        "adminpass": "pass",
+        "event": "wallstreet"
+    }
+    r = requests.post(url=api_endpoint, data=data)
+    userdets = r.json()
+    print()
+    print("Api Request, user details : ")
+    print(userdets)
+    print()
+    return userdets
+
+
+def createUser(userdets):
+    print()
+    print("Creating ", userdets)
+    print()
+    username = userdets['user']['username']
+    password = userdets['user']['password']
+    email = userdets['user']['email']
+    name = userdets['user']['name']
+    user = User.objects.create_user(username=username,
+                                    password=password,
+                                    email=email)
+    user.first_name = name
+    user.save()
+    profile = Profile.objects.create(user=user)
+    profile.save()
+    print()
+    print(username + " created and saved")
+    print()
+
+
 class Login(View):
     template = 'bazaar/login.html'
     template1 = 'bazaar/index.html'
@@ -53,17 +94,40 @@ class Login(View):
         return render(request, self.template, {})
 
     def post(self, request):
-        user = authenticate(username=request.POST["username"],
-                            password=request.POST["password"])
+        username = request.POST["username"]
+        password = request.POST["password"]
+
+        if username == "" or password == "":
+            message = "Missing username or password"
+            context = {"message": message}
+            return render(request, self.template, context)
+
+        user = authenticate(username=username, password=password)
 
         if user is not None:
             if user.is_active:
+                print()
+                print("User in DB")
+                print()
                 login(request, user)
                 return redirect("../")
         else:
-            message = "Invalid Username or Password!"
-            context = {"message": message}
-            return render(request, self.template, context)
+            # message = "Invalid Username or Password!"
+            # context = {"message": message}
+            # return render(request, self.template, context)
+            print()
+            print("User not in DB")
+            print()
+            newuser = requestUser(username, password)
+            if newuser["allow"]:
+                createUser(newuser)
+                user = authenticate(username=username, password=password)
+                login(request, user)
+                return redirect("../")
+            else:
+                message = "Invalid Username or Password!"
+                context = {"message": message}
+                return render(request, self.template, context)
 
 
 def Logoff(request):
