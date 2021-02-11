@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-j+4_zuyw-8c1%#e+x_-nn=5dxu7(cyc^$dzc^nkhc6r2%!9no'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -75,15 +75,15 @@ CELERY_IMPORTS = ("bazaar.tasks", )
 CELERY_BEAT_SCHEDULE = {
     'task-news': {
         'task': 'bazaar.tasks.addNews',
-        'schedule': 100,
+        'schedule': 900,
     },
     'task-leaderboard': {
         'task': 'bazaar.tasks.LeaderBoardUpdateTask',
-        'schedule': 200,
+        'schedule': 1200,
     },
     'task-emptyTables': {
         'task': 'bazaar.tasks.emptyBuyTableSellTableTask',
-        'schedule': 200,
+        'schedule': 1800,
     },
     'task-distributeSpread': {
         'task': 'bazaar.tasks.spreadTask',
