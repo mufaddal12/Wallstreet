@@ -70,16 +70,16 @@ def LeaderBoardUpdateTask():
     all_profiles = Profile.objects.all()  # Get all Profiles
     for p in all_profiles:
         # Calculate total value of shares
-        shareValuation = 0
-        shareTableEntries = UserShareTable.objects.filter(
-            profile=p)  # Get all user shares
-        for entry in shareTableEntries:
-            shareValuation += companyStockPrices[
-                entry.company.name] * entry.bidShares
+        #shareValuation = 0
+        #shareTableEntries = UserShareTable.objects.filter(
+        #    profile=p)  # Get all user shares
+        #for entry in shareTableEntries:
+        #    shareValuation += companyStockPrices[
+        #        entry.company.name] * entry.bidShares
 
-        p.netWorth = (cashValuationPercent * p.cash) + (
-            shareValuationPercent * shareValuation
-        )  # Calculate net worth of user
+        #p.netWorth = (cashValuationPercent * p.cash) + (
+        #    shareValuationPercent * shareValuation
+        #)  # Calculate net worth of user
         p.save()
 
     g = Global.objects.get(pk=1)  # Get Global Values
@@ -180,7 +180,7 @@ def emptyBuyTableSellTableTask():
         #print(sorted_sellTable)
         while i < len(sorted_buyTable):
             if (current_time -
-                    sorted_buyTable[i].transactionTime).seconds >= 3600:
+                    sorted_buyTable[i].transactionTime).seconds >= 150:
                 #current_time.hour - sorted_buyTable[i].transactionTime.hour >= 1:
                 userRevoke(sorted_buyTable[i], True)
                 buyTable.objects.get(pk=sorted_buyTable[i].pk).delete()
@@ -188,7 +188,7 @@ def emptyBuyTableSellTableTask():
 
         while j < len(sorted_sellTable):
             if (current_time -
-                    sorted_sellTable[j].transactionTime).seconds >= 3600:
+                    sorted_sellTable[j].transactionTime).seconds >= 150:
                 #current_time.hour - sorted_sellTable[i].transactionTime.hour >= 1:
                 userRevoke(sorted_sellTable[j], False)
                 sellTable.objects.get(pk=sorted_sellTable[j].pk).delete()

@@ -7,7 +7,7 @@ from datetime import datetime
 from django.http import JsonResponse
 import json
 import requests
-
+import random
 from .models import *
 from .matchUtilities import *
 from .utility import *
@@ -186,7 +186,8 @@ class Buy(View):
             profile = Profile.objects.filter(user=User.objects.get(
                 username=request.user)).first()
             sensex = Global.objects.filter(pk=1).first().sensex
-            companies = Company.objects.all()
+            companies = list(Company.objects.all())
+            random.shuffle(companies)
             bidRange = Global.objects.filter(pk=1).first().bidRangePercent
             context = {
                 'companies': companies,
@@ -203,7 +204,7 @@ class Buy(View):
 
         if startStopMarket:
             companyName = request.POST["companyName"].split(' :')[0]
-            company = Company.objects.get(name=companyName)
+            company = Company.objects.get(name__contains=companyName)
             profile = Profile.objects.filter(user=User.objects.get(
                 username=request.user)).first()
             sensex = Global.objects.filter(pk=1).first().sensex
@@ -299,7 +300,7 @@ class Sell(View):
         startStopMarket = Global.objects.get(pk=1).startStopMarket
         if startStopMarket:
             companyName = request.POST["companyName"].split(' :')[0]
-            company = Company.objects.get(name=companyName)
+            company = Company.objects.get(name__contains=companyName)
             profile = Profile.objects.filter(user=User.objects.get(
                 username=request.user)).first()
 

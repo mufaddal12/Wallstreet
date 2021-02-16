@@ -79,7 +79,7 @@ CELERY_BEAT_SCHEDULE = {
     },
     'task-leaderboard': {
         'task': 'bazaar.tasks.LeaderBoardUpdateTask',
-        'schedule': 600,
+        'schedule': 300,
     },
     'task-emptyTables': {
         'task': 'bazaar.tasks.emptyBuyTableSellTableTask',
