@@ -43,7 +43,7 @@ Kunal Chadha <a href="https://github.com/ks2334"><img src="https://cdn1.iconfind
 Bhushan Pagare <a href="https://github.com/bpagare6"><img src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png" width=30 height=30/></a> <a href="https://www.linkedin.com/in/bhushanpagare/"><img src="https://icon-library.net/images/linkedin-icon-eps/linkedin-icon-eps-29.jpg" width=30 height=30/></a><br/>
 Aditya Chaloo <a href="https://github.com/adichaloo"><img src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png" width=30 height=30/></a> <a href="https://www.linkedin.com/in/aditya-chaloo-0b2952156/"><img src="https://icon-library.net/images/linkedin-icon-eps/linkedin-icon-eps-29.jpg" width=30 height=30/></a><br/>
 Manav Peshwani <a href="https://www.linkedin.com/in/manav-peshwani-37041216a/"><img src="https://icon-library.net/images/linkedin-icon-eps/linkedin-icon-eps-29.jpg" width=30 height=30/></a><br/>
-
+Mufaddal Diwan <a href="https://github.com/mufaddal12"><img src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png" width=30 height=30/></a><br/>
 ### You want to contribute ?
 1. Fork the repo
 2. Make the changes, add features
